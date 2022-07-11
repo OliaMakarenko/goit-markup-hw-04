@@ -176,8 +176,9 @@ img {
   margin-right: 50px;
 }
 
-.header-contacts {
-  display: block;
+.header-contacts-link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -185,13 +186,20 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
+
+  fill: #757575;
 }
 
-.header-contacts:hover,
-.header-contacts:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--accent-txt-cl);
+
+  fill: var(--accent-txt-cl);
 }
 
+.header-contacts-icon {
+  margin-right: 10px;
+}
 .current-link {
   color: var(--accent-txt-cl);
 }
@@ -238,6 +246,38 @@ img {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-txt-cl);
+}
+
+.footer-social-media {
+  margin-left: 70px;
+}
+
+.footer-link {
+  display: flex;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-text {
+  display: block;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+  color: var(--main-bg-cl);
+}
+
+.footer-group {
+  display: flex;
+}
+
+.footer-social-item {
+}
+
+.footer-link {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* index.html */
@@ -342,10 +382,53 @@ img {
 }
 
 .team-member-position {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--main-txt-cl);
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-media-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  color: #afb1b8;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  /* outline: 2px solid red; */
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  color: #ffffff;
+  background-color: var(--btn-cl);
+}
+
+.social-media-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
 }
 
 /* portfolio.html */
